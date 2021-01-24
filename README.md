@@ -14,11 +14,11 @@
 
 ## Build
 - Build darknet by allowing OpenCV, GPU and cuDNN
-- add the following code to public method of class `DetectionNN` in `tkDNN-master/include/tkDNN/DetectionNN.h`
+- Add the following code to public method of class `DetectionNN` in `tkDNN-master/include/tkDNN/DetectionNN.h` and build tkDNN
 ```C++
 void setthreshold(float threshold) confThreshold=threshold;
 ```
-- rebuild libtorch by setting to allow `CXX11_ABI` in `TorchConfig.cmake`
+- Instead of using the libtorch downloaded, rebuild Torch by setting to allow `CXX11_ABI` in `TorchConfig.cmake`
 ```C++
 if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
   set(TORCH_CXX_FLAGS "-D_GLIBCXX_USE_CXX11_ABI=1")
