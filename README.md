@@ -3,6 +3,7 @@
 - 20 FPS on TX2
 - multi-threading
 - TensorRT accelerated
+
 ## Dependencies
 - tkDNN
 - darknet
@@ -11,6 +12,9 @@
 - CUDA
 - cuDNN
 - OpenCV
+
+## Weights
+链接: https://pan.baidu.com/s/1g7_j4-g1caWBFHwj_1t3kw  密码: k1iw
 
 ## Build
 - Build darknet by allowing OpenCV, GPU and cuDNN
