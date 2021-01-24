@@ -18,7 +18,7 @@
 
 ## Build
 - Build darknet by allowing OpenCV, GPU and cuDNN
-- add the following code to public method of class `DetectionNN` in `tkDNN-master/include/tkDNN/DetectionNN.h`
+- add the following code as a public method of class `DetectionNN` in `tkDNN-master/include/tkDNN/DetectionNN.h`
 ```C++
 void setthreshold(float threshold) confThreshold=threshold;
 ```
