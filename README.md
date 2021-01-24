@@ -3,22 +3,18 @@
 - 20 FPS on TX2
 - multi-threading
 - TensorRT accelerated
-
 ## Dependencies
-- tkDNN
-- darknet
-- libtorch
-- TensorRT
+- [tkDNN](https://github.com/ceccocats/tkDNN)
+- [darknet](https://github.com/AlexeyAB/darknet)
+- [libtorch](https://github.com/pytorch/pytorch)
+- [TensorRT](https://github.com/NVIDIA/TensorRT)
 - CUDA
 - cuDNN
-- OpenCV
-
-## Weights
-链接: https://pan.baidu.com/s/1g7_j4-g1caWBFHwj_1t3kw  密码: k1iw
+- [OpenCV](https://github.com/opencv/opencv)
 
 ## Build
 - Build darknet by allowing OpenCV, GPU and cuDNN
-- add the following code as a public method of class `DetectionNN` in `tkDNN-master/include/tkDNN/DetectionNN.h`
+- add the following code to public method of class `DetectionNN` in `tkDNN-master/include/tkDNN/DetectionNN.h`
 ```C++
 void setthreshold(float threshold) confThreshold=threshold;
 ```
@@ -27,3 +23,4 @@ void setthreshold(float threshold) confThreshold=threshold;
 if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
   set(TORCH_CXX_FLAGS "-D_GLIBCXX_USE_CXX11_ABI=1")
 endif()
+```
