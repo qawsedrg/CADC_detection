@@ -8,10 +8,9 @@
 - [darknet](https://github.com/AlexeyAB/darknet)
 - [libtorch](https://github.com/pytorch/pytorch)
 - [TensorRT](https://github.com/NVIDIA/TensorRT)
+- [OpenCV](https://github.com/opencv/opencv)
 - CUDA
 - cuDNN
-- [OpenCV](https://github.com/opencv/opencv)
-
 ## Build
 - Build darknet by allowing OpenCV, GPU and cuDNN
 - Add the following code to public method of class `DetectionNN` in `tkDNN-master/include/tkDNN/DetectionNN.h` and build tkDNN
