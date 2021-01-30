@@ -1,6 +1,6 @@
 ## Features
 - CADC 对地侦查打击比赛程序识别部分
-- 20 FPS on TX2
+- 20-25 FPS on TX2
 - multi-threading
 - TensorRT accelerated
 ## Dependencies
