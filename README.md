@@ -1,8 +1,9 @@
 ## Features
-- CADC 对地侦查打击比赛程序识别部分
-- 20-25 FPS on TX2
-- multi-threading
-- TensorRT accelerated
+- Recognition and tracking of 2-digits target for automatic aeroplane for the Chinese Aeromodelling Design Competition (CADC)
+- Detection model trained using Darknet-YOLO
+- [2 digits recognition, automatic parameter searching using NNI , model built using Pytorch, trained on SVHN (The Street View House Numbers)](https://github.com/qawsedrg/CADC-SVHN-PyTorch)
+- Acceleration : TensorRT (tkDNN) (FP16), C++, multi-threading
+- Real-time (20-25FPS) on TX2 (edge computing platform), ~ 200FPS on RTX 2070
 ## Dependencies
 - [tkDNN](https://github.com/ceccocats/tkDNN)
 - [darknet](https://github.com/AlexeyAB/darknet)
